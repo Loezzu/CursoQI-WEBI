@@ -1,0 +1,22 @@
+body{
+  background: #05152d url(../img/background.jpg) top center no-repeat;
+  color:white;
+  text-shadow: 1px 1px 3px black;
+  text-align: center;
+  
+  
+}
+
+#div-one{
+  text-align: initial;
+}
+
+a{
+  color: white;
+}
+
+.div {
+ 
+  background-color: #565656;
+  text-align: center;
+}
