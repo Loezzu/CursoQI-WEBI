@@ -1,0 +1,163 @@
+@charset 'utf-8';
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  
+}
+
+body{
+  background-image: url(../img/fundo);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.dark-blue{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.medium-blue{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.light-blue{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul{
+  list-style: none;
+}
+
+#geral{
+  width: 100%;
+  height: 230%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#top{
+  width: 97%;
+  height: 13.7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#login{
+  width: 100%;
+  height: 15%;
+  color: white;
+}
+
+#login ul{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  float: right;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2vmin;
+
+}
+
+#banner{
+  width: 100%;
+  height: 45%;
+}
+
+#menu{
+  width: 100%;
+  height: 15%;
+}
+
+#menu ul{
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3vmin;
+  font-weight: bold;
+}
+
+#body{
+  width: 97%;
+  height: 81%;
+  display: flex;
+}
+
+#left-content{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#left-content div{
+  width: 99%;
+  height: 31.1%;
+}
+
+#right-content{
+  width: 30%;
+  height: 100%;
+}
+
+#highlights{
+  width: 100%;
+  height: 73.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#highlights div{
+  width: 90%;
+  height: 28%;
+}
+
+#highlights div:nth-child(3){
+  width: 90%;
+  height: 35%;
+}
+
+#advertising{
+  width: 100%;
+  height: 26.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#square{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#square figure{
+  width: 40%;
+  height: 90%;
+}
+
+#rectangle{
+  width: 90%;
+  height: 32%;
+}
+
+#footer{
+  width: 97%;
+  height: 4%;
+  background-color: silver;
+}
