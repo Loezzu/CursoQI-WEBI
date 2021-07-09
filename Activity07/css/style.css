@@ -1,0 +1,182 @@
+@charset 'utf-8';
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav ul{
+  list-style: none;
+}
+
+.blue{
+  background-color: rgb(69, 107, 235);
+}
+
+.orange{
+  background-color: darkorange;
+}
+
+.yellow{
+  background-color: rgba(255, 255, 9, 0.445);
+}
+
+#general{
+  width: 100%;
+  height: 500%;
+  position: absolute;
+  background-color: tan;
+}
+
+#section-one{
+  width: 100%;
+  height: 20%;
+  background-color: chocolate;
+  
+}
+
+#top{
+  width: 100%;
+  height: 15%;
+  background-color: lightgreen;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#top nav{
+  width: 60%;
+  height: 40%;
+
+}
+
+#top nav ul{
+  display: flex;
+  height: 100%;
+  color: white;
+  justify-content: space-around;  
+  align-items: center;
+  font-size: 1.7vmin;
+  font-weight: bold;
+}
+
+#body-one{
+  width: 100%;
+  height: 85%;
+  background-color: forestgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#banner-one{
+  width: 80%;
+  height: 50%;
+}
+
+#banner-two{
+  width: 70%;
+  height: 20%;
+
+}
+
+#section-two{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#yellow-figure{
+  height: 65%;
+  width: 35%;
+}
+
+#light-figure{
+  height: 65%;
+  width: 55%;
+  background-color: wheat;
+}
+
+#section-three {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#square-one, #square-two{
+  width: 38%;
+  height: 55%;
+  background-color: #ffd900;
+}
+
+#rectangle-one, #rectangle-two{
+  width: 30%;
+  height: 20%;
+  background-color: #ffd900;
+  border: 0.5vmin solid darkslateblue;
+}
+
+#section-four{
+  width: 100%;
+  height: 20%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#section-four figure{
+  width: 80%;
+  height: 70%;
+  margin-bottom: 7vmin;
+  border: 0.5vmin solid blue;
+}
+
+#section-five{
+  width: 100%;
+  height: 20%;
+  background-color: rgba(37, 37, 37, 0.938);
+  display: flex;
+}
+
+#left-content{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#left-content div{
+  width: 80%;
+  height: 90%;
+  background-color: white;
+}
+
+#right-content{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+ 
+}
+
+#right-content div{
+  width: 80%;
+  height: 18.5%;
+  background-color: white;
+}
+
+
+
+
