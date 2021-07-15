@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Activity 08</title>
+</head>
+<body>
+  <div id="general">
+    <div id="register">
+      <form action="" method="GET" id="form">
+        <fieldset id="f-register" class="form-separation">
+          <legend class="legend">USER REGISTER</legend>
+          <fieldset id="f-personal-data" class="form-separation">
+            <legend class="legend">Personal Data</legend>
+            <p>
+              <Label>Name:</Label>
+              <input type="text" class="field form input">
+            </p>
+            <p>
+              <Label>Age:</Label>
+              <input type="number" class="field form input">
+            </p>
+            <p>
+              <label>Birth Date:</label>
+              <input type="date" class="form input">
+            </p>
+            <p>
+              <fieldset id="f-gender" class="form-separation">
+                <legend class="legend">Gender:</legend>
+                <p>
+                  <input type="radio" name="sexo" class="form">
+                  <label>Male</label>
+
+                  <input type="radio" name="sexo" class="form">
+                  <label>Female</label>
+                </p>  
+              </fieldset>
+            </p>
+          </fieldset>
+
+          <fieldset id="f-address" class="form-separation">
+            <legend class="legend">Address</legend>
+            <p>
+              <label>Street:</label>
+              <input type="text" class="field form input">
+
+              <label>Nº:</label>
+              <input type="number" class="medium-width form input">
+
+              <label>City:</label>
+              <input type="text" class="field form input" input>
+
+              <label>UF:</label>
+              <select class="medium-width input">
+                <option>RS</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>RJ</option>
+              </select>
+            </p>
+            <p id="msg">
+              <legend>Enter a reference point:</legend>
+              <textarea id="reference" class="input"></textarea>
+            </p>
+            <p id="proof">
+              <legend>Attach proof of residence:</legend>
+              <input type="file" id="file">
+            </p>
+          </fieldset>
+          <fieldset id="f-login" class="form-separation">
+            <legend class="legend">Username and Password</legend>
+            <p>
+              <label>Username:</label>
+              <input type="text" class="field form input">
+              <label">Password:</label>
+              <input type="password" class="field form input">
+              <input type="button" value="Validate">
+          </fieldset>
+          <fieldset class="form-separation" id="f-button">
+            <p>
+              <input type="button" value="Register" class="button form input">
+              <input type="reset" value="Clean form" class="button form input">
+            </p>
+        </fieldset>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
