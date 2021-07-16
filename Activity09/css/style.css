@@ -1,0 +1,107 @@
+@charset 'utf-8';
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: orange;
+}
+
+#general{
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#screen1{
+  width: 95%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#card1, #card2, #card3{
+  width: 32%;
+  height: 70%;
+  background-color: seagreen;
+  border-radius: 2vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.image{
+  width: 100%;
+  border-top-right-radius: 2vmin;
+  border-top-left-radius: 2vmin;
+  height: 100%;
+}
+
+#text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 6%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#title{
+  width: 90%;
+  height: 10%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#text-body{
+  width: 90%;
+  height: 90%;
+
+  line-height: 3.5vmin;
+}
+
+
+
+#card2{
+  background-color: slateblue;
+}
+
+#card3{
+  background-color: wheat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#screen2{
+  width: 100%;
+  height: 50%;
+  background-color: seagreen;
+}
