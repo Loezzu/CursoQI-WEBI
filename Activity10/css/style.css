@@ -1,0 +1,94 @@
+@charset 'utf-8';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#general{
+  width: 100%;
+  height: 100%;
+  animation: changeBackgroundImage 30s infinite ;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#black{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  
+}
+
+
+@keyframes changeBackgroundImage {
+  0% {
+    background-image: url("../img/casa-fundo1.jpeg");
+    
+  }
+  33.33% {
+    background-image: url("../img/casa-fundo2.jpeg");
+  }
+  66.66% {
+    background-image: url("../img/casa-fundo3.jpeg");
+  }
+  100% {
+    background-image: url("../img/casa-fundo4.jpeg");
+  }
+}
+
+
+
+#logo{
+  width: 8%;
+  font-size: 7vmin !important;
+  color: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: 1%;
+  left: 1%;
+}
+
+
+#carouselExampleIndicators{
+  width: 65%;
+  height: 75%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10vmin;
+  box-shadow: 1px 1px 100px white;
+
+}
+
+#carouselExampleIndicators div{
+  width: 100%;
+  height: 100%;
+} 
+
+#carouselExampleIndicators div div {
+  width: 100%;
+  height: 100%;
+}
+
+#carouselExampleIndicators div div img{
+  border-radius: 2vmin;
+  width: 100%;
+  height: 100%;
+
+}
+
