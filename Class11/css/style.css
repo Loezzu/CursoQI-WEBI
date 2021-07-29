@@ -1,0 +1,452 @@
+@charset 'utf-8';
+
+*{
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Baloo Tamma 2', cursive;
+  border-style: none;
+}
+
+a{
+  color: white;
+}
+
+body{
+  background-color: darkorange;
+}
+
+#topo{
+  width: 100%;
+  background-color: white;
+  float: left;
+}
+
+#logo{
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/icon);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+#btn-menu{
+  width: 50px;
+  height: 50px;
+  background-color: darkorange;
+  border-radius: 10px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+  color: white;
+}
+
+#menu{
+  float: left;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(255, 140, 0, 0.801);
+  position: fixed;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#menu:target{
+  height: 100%;
+}
+
+#btn-fechar{
+  float: right;
+  padding: 30px;
+  margin-top: -7px;
+  font-weight: bold;
+}
+
+#menu ul{
+  width: 100%;
+  height: 100%;
+  clear: both;
+  text-align: center;
+}
+
+#menu ul li{
+  padding: 3%;
+}
+
+#menu ul li:hover{
+  background-color: rgba(255, 255, 255, 0.521);
+}
+
+#banner{
+  width: 100%;
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+  float: left;
+}
+
+#banner h1, h2{
+  padding: 2%;
+  font-size: 1.5em;
+}
+
+#banner h1{
+  font-size: 1.8em;
+}
+
+#botoes-banner{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#botoes-banner button{
+  width:  45%;
+  height: 30px;
+  margin-bottom: 5px;
+  border-radius: 7px;
+  color: darkorange;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+}
+
+#corpo{
+  float: left;
+  width: 100%;
+  padding: 3% 4%;
+}
+
+#corpo figure{
+  width: 100%;
+  background-color: white;
+  font-size: 0.9em;
+  margin-bottom: 3%;
+  border-radius: 7px;
+}
+
+#corpo figure img{
+  width: 100%;
+  border-radius: 7px 7px 0px 0px;
+}
+
+
+#corpo figure span h3{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+#corpo figure span p{
+  padding: 5%;
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 1.2em
+}
+
+#inscrevase{
+  float: left;
+  width: 100%;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+#inscrevase input{
+  width: 98%;
+  height: 35px;
+  margin: 1%;
+  border-radius: 7px;
+  color: chocolate;
+
+}
+
+#inscrevase input::placeholder{
+  color: chocolate;
+  font-size: 1.4em;
+  font-style: italic;
+  padding-left: 10px;
+}
+
+#inscrevase input:nth-child(2){
+  background-color: darkorange;
+  box-shadow: 0px 0px 3px white;
+  color: white;
+  font-size: 1.2em;
+}
+
+#rodape{
+  float: left;
+  background-color: chocolate;
+  width: 100%;
+  text-align: center;
+  padding: 3% 4%;
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: white;
+}
+
+#rodape #redes-sociais a{
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2em;
+  margin: 0 2.5%;
+}
+
+#rodape #redes-sociais a:hover{
+  color: white;
+}
+
+#rodape #redes-sociais a i{
+  transition: 0.2s;
+}
+
+#rodape #redes-sociais i:hover{
+  transform: scale(1.8);
+}
+
+#rodape address{
+  color: white;
+  font-style: normal;
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-shadow: 0px 0px 1px #000;
+}
+
+@media screen and (min-width:400px) {   
+  #logo{
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+  }
+
+  #btn-menu{
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+  
+  
+  #banner h1, h2{
+    font-size: 1.6em;
+  }
+  
+  #banner h1{
+    font-size: 2em;
+  }
+
+  #corpo figure span h3{
+    font-size: 1.7em;
+  }
+  
+  #corpo figure span p{
+    font-size: 1.4em
+  }
+}
+
+@media screen and (min-width:768px) {
+  #logo{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin-left: 30px;
+  }
+
+  #btn-menu, #btn-fechar{
+    display: none;
+  }
+  
+  #menu{
+    width: 60%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+  }
+  
+  #menu ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #menu ul li{
+    padding: 0;
+  }
+
+  #menu ul li{
+    color: darkorange;
+    font-size: 1.2em;
+  }
+
+  #banner{
+    display: flex;
+  }
+
+  #texto-banner{
+    width: 50%;
+  }
+
+  #botoes-banner{
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #botoes-banner button{
+    width:  90%;
+    height: 60px;
+    font-size: 1.8em;
+  }
+
+  #banner h1, h2{
+    font-size: 2em;
+  }
+  
+  #banner h1{
+    font-size: 2.3em;
+  }
+
+  #corpo figure{
+    width: 100%;
+    height: 300px;
+    font-size: 0.9em;
+    display: flex;
+  }
+  
+  #corpo figure img{
+    width: 50%;
+    height: 100%;
+    border-radius: 7px 0px 0px 7px;
+  }
+  
+  #corpo figure span h3{
+    font-size: 1.6em;
+  }
+
+  #corpo figure span p{
+    font-size: 1.3em;
+    padding: 1% 5%;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+  #logo{
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    margin-left: 30px;
+  }
+
+  #btn-menu, #btn-fechar{
+    display: none;
+  }
+  
+  #menu{
+    width: 70%;
+    height: 180px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+  }
+  
+  #menu ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #menu ul li{
+    padding: 0;
+  }
+
+  #menu ul li{
+    color: darkorange;
+    font-size: 1.5em;
+  }
+
+  #banner{
+    display: flex;
+  }
+
+  #texto-banner{
+    width: 50%;
+  }
+
+  #banner h1, h2{
+    font-size: 2em;
+  }
+  
+  #banner h1{
+    font-size: 3.5em;
+  }
+
+  #corpo{
+    display: flex;
+  }
+
+  #corpo figure{
+    width: 100%;
+    height: auto;
+    font-size: 0.9em;
+    display: block;
+    margin: 0 0.5%;
+  }
+  
+  #corpo figure img{
+    width: 100%;
+    height: auto;
+    border-radius: 7px 7px 0px 0px;
+  }
+
+  #inscrevase{
+    height: 200px;
+    display: flex;
+  }
+
+  #inscrevase  #texto-inscrevase, form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #inscrevase input{
+    width: 90%;
+    height: 50px;
+    margin: 2%;
+  }
+
+  #inscrevase input:nth-child(2){
+    font-size: 1.4em;
+  }
+
+  #texto-inscrevase h2{
+    font-size: 2.3em;
+  }
+
+  #texto-inscrevase h3{
+    font-size: 1.8em;
+  }
+}
+
+
+
+
