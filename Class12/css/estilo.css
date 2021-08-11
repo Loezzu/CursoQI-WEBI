@@ -1,0 +1,155 @@
+@charset 'utf-8';
+
+*{
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+
+a{
+  color: white;
+}
+
+img{
+  width: 100%;
+}
+
+h2{
+  text-align: center;
+  margin: 80px 0px 20px 0px;
+  font-size: 2em;
+}
+
+#topo{
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+#menu ul{
+  display: flex;
+}
+
+#menu ul li{
+  padding-right: 20px;
+}
+
+#flex{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+
+}
+
+#flex figure{
+  /* flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 200px; */
+  flex: 1 0 200px;
+  margin: 10px;
+}
+
+#grid1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 780px;
+  margin: auto;
+  padding: 10px;
+}
+
+#grid1 figure:nth-child(n+4){
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+#grid1 figure#anun{
+  display: block;
+  grid-column: 1;
+  grid-row: 2/5;
+} 
+
+#grid2{
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  max-width: 800px;
+  margin: auto;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+#grid2 figure{
+  margin-bottom: 10px;
+}
+
+#grid3{
+  max-width: 700px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+#grid3 figure:nth-child(1){
+  padding: 1/3;
+}
+
+#grid3 figure{
+  display: grid;
+}
+
+#grid3 figure img{
+  grid-column: 1;
+  grid-row: 1/3;
+  align-self: flex-end;
+}
+
+#grid3 figcaption{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  color: white;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/*Responsividade do grid's*/
+@media screen and (max-width:600px) {
+  #grid1{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  #grid1 figure:nth-child(n+4){
+    display: block;
+  }
+
+  #grid1 figure#anun{
+    grid-auto-columns: none;
+    grid-row: auto;
+    order: -1;
+  } 
+
+  #grid2{
+    grid-template-columns: 1fr;
+  }
+
+  #navegacao-img{
+    display: flex;
+    overflow: scroll;
+  }
+
+  #navegacao-img figure{
+    flex: 1 0 200px;
+    margin: 5px;
+    
+  }
+
+}
