@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+img{
+  width: 40px;
+  cursor: pointer;
+}
+
+.button{
+  background-color: chocolate;
+}
