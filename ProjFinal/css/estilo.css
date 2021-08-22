@@ -7,8 +7,6 @@
   list-style: none;
 }
 
-
-
 body{
   background-color: slategray;
 }
@@ -26,7 +24,7 @@ body{
   text-shadow:  0px 0px 10px #000;
   width: 200px;
   height: 25px;
-  font-size: 1.6em;
+  font-size: 1.7em;
   text-align: center;
   float: left;
 }
@@ -60,6 +58,7 @@ button a{
 
 #menu ul a{
   color: white;
+  font-size: 1.7em;
 }
 
 #menu:target{
@@ -95,16 +94,101 @@ button a{
   z-index: 1;
 }
 
-
 #texto-carrousel{
+  margin-top: 50px !important;
   margin: 10px;
   padding: 5px;
-  font-size: 1.3em;
+  font-size: 2em;
+  font-weight: bold;
   color: black;
   text-align: center;
+  float: left;
 }
 
 #texto-carrousel a{
   color: lightskyblue;
 }
+
+#cardapio{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 40px;
+  float: left;
+}
+
+#div-cardapio{
+  width: 320px;
+  height: 1550px;
+  background-color: lightgray;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#titulo-cardapio{
+  text-align: center;
+  margin: 20px;
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+#hamburguer1, #hamburguer2, #hamburguer3, #hamburguer4{
+  width: 250px;
+  height: 350px;
+  background-color: black;
+}
+
+
+#burguer1{
+  background-image: url(../img/burguer1.jpg);
+}
+
+#burguer2{
+  background-image: url(../img/burguer2.jpeg);
+}
+
+#burguer3{
+  background-image: url(../img/burguer3.webp);
+}
+
+#burguer4{
+  background-image: url(../img/burguer4.jpg);
+}
+
+.imagem-hamburguer{
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  margin-top: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.titulo-hamburguer{
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+  margin-top: 30px;
+}
+
+.descricao-hamburguer{
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+
+
 
