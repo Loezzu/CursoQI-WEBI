@@ -1,0 +1,17 @@
+#texto{
+  color: #555;
+}
+
+body{
+  background-color: #ddd;
+}
+
+h1{
+  font-weight: bold;
+  color: #555;
+  text-shadow: 0px 0px 1px #000;
+}
+
+.bg-laranja{
+  background-color: darkorange;
+}

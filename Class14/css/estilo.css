@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div{
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+div button{
+  padding: 10px;
+  margin: 10px;
+}
+
+#barra{
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  transition: 0.4s;
+}

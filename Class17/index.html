@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Modal JS</title>
+</head>
+<body>
+  <a href="#" onclick="abrirModal()" id="abrir">Abrir</a>
+
+  <div id="cortina">
+    <div id="modal">
+      <a href="#" onclick="fecharModal()" id="fechar">X</a>
+      <form action="" method="GET">
+        <label>
+          Valor 1:
+          <input type="number" id="v1" name="n-v1">
+        </label>
+        <label for="">
+          Valor 2:
+          <input type="number" id="v2" name="n-v2">
+        </label>
+        <label>
+          Operações:
+          <select name="n-op" id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">Resto</option>
+            <option value="**">Potência</option>
+            <option value="r">Raiz</option>
+          </select>
+        </label>
+        <input type="button" onclick="validar()" id="btn" value="Calcular">
+        <h2 id="resultado"></h2>
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/funcoes.js"></script> 
+</body>
+</html>
